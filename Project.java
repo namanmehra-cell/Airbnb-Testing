@@ -48,7 +48,7 @@ public void booting() throws InterruptedException {
 //	tags.get(1).click();
 	ArrayList<String> windows = new ArrayList<String>(driver.getWindowHandles());
 	driver.switchTo().window(windows.get(1));
-	js.executeScript("window.scrollBy(0,750)");
+	//js.executeScript("window.scrollBy(0,750)");
 	System.out.println(driver.findElement(By.tagName("h1")).getText());
 	driver.findElement(By.xpath("//button[@class='_qqb2vcb']//span[@class='t12u7nq4 dir dir-ltr']")).click();
 }
